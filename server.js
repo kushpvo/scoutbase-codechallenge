@@ -25,8 +25,6 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-// app.use(addUser);
-
 app.get("/", (req, res, next) => {
   res.redirect("/graphql");
 });
