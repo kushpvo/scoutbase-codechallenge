@@ -10,18 +10,6 @@ const SECRET = "dfasdfa324desfdfsfasdf32";
 
 const app = express();
 
-// const addUser = async req => {
-//   const token = req.headers.authorization;
-//   console.log(req);
-//   try {
-//     const { user } = await jwt.verify(token, SECRET);
-//     req.user = user;
-//   } catch (err) {
-//     console.log(err);
-//   }
-//   req.next();
-// };
-
 const server = new ApolloServer({
   typeDefs,
   resolvers,
